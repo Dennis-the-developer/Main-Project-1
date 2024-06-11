@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#hero-section {
+    height: 90vh;
+    width: 100vw;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../assets/images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes animate {
+    0% {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-1.jpeg);
+    }
+    20% {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-2.avif);
+    }
+    40% {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-3.jpeg);
+    }
+    60% {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-4.jpeg);
+    }
+    80% {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-5.jpeg);
+    }
+    100% {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-1.jpeg);
+    }
+}
+
+#navbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#navbar nav a {
+    font-size: 20px;
+    font-family: "Lato Bold", HelveticaNeue-Bold, "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+#navbar button {
+    height: 6vh;
+    width: 10vw;
+    background-color: #DB3E24;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#logo {
+    width: 5vw;
+    height: 9vh;
+}
+
+#about-us {
+    width: 100vw;
+    height: 70vh;
+    background-color: #FFFFFF;
+}
+
+#for-nav-and-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+#navbar div:first-child {
+    margin-left: 150px;
+}
+
+#navbar div:last-child {
+    margin-right: 150px;
+}
+
+#donation-section {
+    height: 80vh;
+    width: 40vw;
+    background-color: grey;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+}
+
+#donation-section p:first-child {
+    font-size: 36px;
+    color: white;
+}
+
+#donation-button-section-first {
+    background-color: #009CA6;
+    width: inherit;
+    height: 30vh;
+    display: grid;
+    
+}
+
+/* #donation-buttons-row-1 {
+    width: inherit;
+    height: 40px;
+} */
+
+#donation-buttons-row-1 button {
+    width: 40%;
+}
+
+#second-hero-section {
+    height: 80vh;
+    width: 100vw;
+    background-image: url(../assets/images/smiling-african-children-2.jpeg);
+}
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: 100vw;
+    height: 75vh;
+}
+
+#about-us-bottom {
+    /* background-color: grey; */
+    width: 100%;
+    height: 55vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    column-gap: 20px; 
+}
+
+#health {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#health p:first-child {
+    font-size: 23px;
+    color: white;
+}
+
+#health p:last-child {
+    font-size: 18px;
+}
+
+#health-img-div {
+    background-color: #009CA6;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
