@@ -306,3 +306,14 @@ nav {
 #second-hero-section-text p{
     font-size: 20px;
 }
+
+#monthly-giver {
+    color: orangered;
+    font-size: 60px;
+}
+
+#tester {
+    margin-top: 3vh;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
