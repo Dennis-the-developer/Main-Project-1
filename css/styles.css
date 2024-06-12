@@ -112,6 +112,23 @@ nav {
     left: 10vw;
 }
 
+#we-accept-and-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10vw;
+    margin: 2vh 0 3vh;
+}
+
+
+#continue-to-details {
+    width: inherit;
+    height: 8vh;
+    background-color: #FF6CA8;
+    border: none;
+    border-radius: 10px;
+}
+
 #donation-section p:first-child {
     font-size: 36px; 
     color: white;
@@ -161,11 +178,16 @@ nav {
     border: none;
 }
 
-/* #donation-section hr {
-    
-} */
+#donation-section hr {
+   margin: 3vh 0; 
+}
 
-#no-better-container {
+ #we-accept {
+    font-size: 5px;
+    color: red;
+}
+
+#know-better-container {
     padding-top: 5vh;
     display: flex;
     column-gap: 1.5vw;
@@ -173,12 +195,12 @@ nav {
     justify-content: center;
 }
 
-#no-better-text {
+#know-better-text {
     color: white;
     letter-spacing: 1.5px;
 }
 
-#no-better-icon {
+#know-better-icon {
     width: 4vw;
     height: 5vh;
 }
@@ -200,7 +222,7 @@ nav {
 }
 
 #about-us-bottom {
-    /* background-color: grey; */
+    background-color: grey;
     width: 100%;
     height: 55vh;  
     display: flex;
