@@ -162,6 +162,11 @@ nav {
     font-size: 20px;
 }
 
+#donation-buttons-row-1 button:hover {
+    background-color: #50A8DB;
+    color: white;
+}
+
 #donation-buttons-row-2 {
     display: flex;
     column-gap: 10px;
@@ -173,6 +178,11 @@ nav {
     border-radius: 10px;
     border: none;
     font-size: 20px;
+}
+
+#donation-buttons-row-2 button:hover {
+    background-color: #50A8DB;
+    color: white;
 }
 
 #donation-buttons-row-3 input {
