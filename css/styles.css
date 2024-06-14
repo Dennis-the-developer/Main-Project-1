@@ -1,4 +1,6 @@
 /* primary-color-pink-like: #FF6CA8 */
+/* primary-color-pink-like: #FF6CA8 */
+/* primary-color-pink-like: #FF6CA8 */
 
 body {
     margin: 0;
@@ -7,45 +9,7 @@ body {
     width: 100%;
 }
 
-#hero-section {
-    height: 90vh;
-    width: 100vw;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../assets/images/img1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 5s;
-    animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
-    position: relative;
-}
-
-@keyframes animate {
-    0% {
-        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-1.jpeg);
-    }
-    20% {
-        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-2.avif);
-    }
-    40% {
-        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-3.jpeg);
-    }
-    60% {
-        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-4.jpeg);
-    }
-    80% {
-        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-5.jpeg);
-    }
-    100% {
-        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/images/african-children-1.jpeg);
-    }
-}
-
+/* -----------------------    NAVBAR SECTION   ------------------------ */
 #navbar {
     width: 100vw;
     height: 10vh;
@@ -77,12 +41,6 @@ body {
     height: 10vh;
 }
 
-#about-us {
-    width: 100vw;
-    height: 70vh;
-    background-color: #FFFFFF;
-}
-
 #for-nav-and-btn {
     display: flex;
     align-items: center;
@@ -104,13 +62,39 @@ nav {
     margin-right: 150px;
 }
 
+#nav-items a:hover {
+    color:#FF6CA8;
+}
+/* -----------------------    END OF NAVBAR SECTION   ------------------------ */
+
+/* -----------------------    HERO SECTION   ------------------------ */
+#hero-section {
+    height: 90vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#hero-section-overlay {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0%;
+    z-index: 20;
+}
+
+
 #donation-section {
-    height: 80vh;
+    height: 70vh;
     width: 40vw;
     /* background-color: grey; */
     position: absolute;
-    top: 5vh;
-    left: 10vw;
+    top: 2%;
+    left: 5%;
+    z-index: 100;
 }
 
 #we-accept-and-cards {
@@ -133,6 +117,10 @@ nav {
     text-transform: uppercase;
 }
 
+#donation-header {
+    font-style: italic;
+}
+
 #donation-section p:first-child {
     font-size: 36px; 
     color: white;
@@ -141,7 +129,6 @@ nav {
 }
 
 #donation-button-section-first {
-    /* background-color: #009CA6; */
     width: 100%;
     height: 30vh;
     display: flex;
@@ -186,7 +173,7 @@ nav {
 }
 
 #donation-buttons-row-3 input {
-    width: 99%; /* Seek for explanation from theodora */
+    width: 97%; /* Seek for explanation from theodora */
     height: 10vh;
     border-radius: 10px;
     border: none;
@@ -213,13 +200,30 @@ nav {
     width: 4vw;
     height: 5vh;
 }
+/* -----------------------    END OF HERO SECTION   ------------------------ */
 
+/* ---------------------  PAGE BOTTOM SECTION MODIFICATION   ------------------- */
+#page-bottom-section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-bottom-section-with-margin {
+    width: 80vw;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    
+}
+/* ---------------------  END OF PAGE BOTTOM SECTION MODIFICATION   ------------------- */
+
+/* ---------------------  ABOUT US   ------------------- */
 #about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;    
-    width: 100vw;
+    width: inherit;
     height: 75vh;
 }
 
@@ -243,7 +247,6 @@ nav {
 }
 
 #about-us-bottom {
-    /* background-color: grey; */
     width: 100%;
     height: 55vh;  
     display: grid;
@@ -271,7 +274,8 @@ nav {
 }
 
 #health-img-div {
-    background-color: #50A8DB;
+    background-color: #FF6CA8;
+    opacity: 0.7;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -280,20 +284,39 @@ nav {
     justify-content: center;
 }
 
+.about-text-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-text-msg {
+    color: grey;
+}
+/* -----------------------    END OF ABOUT US SECTION   ------------------------ */
+
+/* -------------------------    SECOND HERO SECTION    --------------------------- */
 #second-hero-section {
     height: 80vh;
-    width: 100vw;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(../assets/images/smiling-african-children-2.jpeg);
+    width: inherit;
     position: relative;
+}
+
+#second-hero-section-overlay {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.5));
 }
 
 #second-hero-section-text {
     color: white;
     width: 30vw;
     height: inherit;
-    /* background-color: green; */
     position: absolute;
-    left: 10vw;
+    top: 0vh;
+    left: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,7 +332,7 @@ nav {
 }
 
 #monthly-giver {
-    color: orangered;
+    color: #FF6CA8;
     font-size: 60px;
 }
 
@@ -318,3 +341,316 @@ nav {
     line-height: 10px;
     letter-spacing: 2px;
 }
+
+#second-hero-video {
+    width: inherit;
+    height: inherit;
+
+}
+
+/*  -------------------------------    END OF SECOND HERO SECTION      --------------------------- */
+
+/* --------------------------------    UPCOMMING EVENTS   -------------------------- */
+#upcomming-events {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+#upcomming-and-featured {
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10vw;
+}
+
+.upcomming-events-img {
+    width: 15vw;
+    height: 20vh;
+}
+
+#fundraiser-for-kids {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+}
+
+#featured-cause-box {
+    width: 30vw;
+    height: 60vh;
+    background-color:#EDF3F5;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#featured-cause-box-top {
+    display: flex;
+    column-gap: 2vw;
+}
+
+#featured-cause-box-top img {
+    width: 20vw;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.funds-status {
+    width: 100%;
+    background-color: #ddd;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.percentage-box {
+    width: 80%;
+    background-color:#50A8DB;
+    border-radius: 10px;
+}
+
+.percentage {
+    text-align: right;
+    padding: 10px 0;
+    color: white;
+}
+
+.funds-raised-and-goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(146, 145, 145)
+}
+
+.event-feature-text-header p{
+    margin-top: 0;
+    padding-left: 0;
+    color: red;
+}
+
+.event-dates {
+    color: red;
+}
+/* -------------------------   END OF UPCOMMING EVENTS   ------------------------------ */
+
+
+/* ----------------   OUR CAUSES   --------------- */
+#our-causes {
+    width: inherit;
+    height: 83vh;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.3)), url(../assets/images/african-children-6.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header {
+        font-size: 40px;
+        font-weight: bold;
+}
+
+#causes-container {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.causes-boxes {
+    height: inherit;
+    width: 25vw;
+}
+
+#first-box {
+    background-color: white;
+    padding-bottom: 2vh;
+}
+#second-box {
+    background-color: white;
+    padding-bottom: 2vh;
+}
+#third-box {
+    background-color: white;
+    padding-bottom: 2vh;
+}
+
+.boxes-top {
+    width: inherit;
+    height: 50%;
+}
+
+.boxes-top img {
+    width: inherit;
+    height: 100%;
+}
+
+.boxes-bottom {
+    width: inherit;
+    height: 50%;
+    padding-left: 2vw;
+    padding-bottom: 3vh;
+}
+
+.funds-status-for-causes {
+    width: 20vw;
+    background-color: #ddd;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.percentage-box-for-causes {
+    width: 40%;
+    background-color:#50A8DB;
+    border-radius: 10px;
+}
+
+.percentage-for-causes {
+    text-align: right;
+    padding: 10px 0;
+    color: white;
+}
+
+.funds-raised-and-goal-for-causes {
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 10vw;
+    align-items: center;
+    color: rgb(146, 145, 145)
+}
+/* ----------------  END OF OUR CAUSES   --------------- */
+
+/* ----------------  VOLUNTEER   --------------- */
+#volunteer {
+    padding: 2vh 0;
+    width: inherit;
+    height: 40vh;
+    background-image: radial-gradient(rgba(0,0,0,0.4) 10%, black, black), url(../assets/images/smiling-african-children-1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#volunteer-header {
+    font-size: 40px;
+}
+
+#volunteer-text {
+    font-size: 24px;
+}
+
+#join-us-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #FF6CA8;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+/* ----------------  END OF VOLUNTEER   --------------- */
+
+/* ----------------  ACHIEVEMENT   --------------- */
+#achievement {
+    width: inherit;
+    height: 60vh;
+}
+
+/* ----------------  END OF ACHIEVEMENT   --------------- */
+
+/* ----------------  FOOTER   --------------- */
+#footer {
+    width: 100vw;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white
+
+}
+
+#footer-top {
+    width: 80vw;
+    height: 90%; 
+    background-image: linear-gradient(rgba(0,0,0), rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../assets/images/footer-bg.jpg');
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3vh;
+}
+
+#footer-bottom {
+    height: 10%;
+    background-color: black;
+}
+
+#first-part {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    column-gap: 5vh;
+}
+#second-part {
+    /* background-color: yellow; */
+}
+#third-part {
+    /* background-color: green; */
+}
+
+#socials {
+    color: white;
+}
+
+.first-part-text {
+    font-size: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.footer-headers {
+    font-size: 30px;
+}
+
+#input-email {
+    width: 16vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+}
+
+#logo-at-footer {
+    width: 20vw;
+}
+
+.placeholders {
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(0,0,0,0.3); 
+    padding-left: 1vw;
+}
+/* ----------------  END OF FOOTER   --------------- */
+
+
+/* ----- test footer ------- */

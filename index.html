@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smile Foundation</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
+
 </head>
 
 <body>
@@ -15,7 +18,7 @@
             <img id="logo" src="./assets/logo/logo-no-background.png" alt="">
         </div>
         <div id="for-nav-and-btn">
-            <nav>
+            <nav id="nav-items">
                 <a href="">Our stories</a>
                 <a href="">Our work</a>
                 <a href="">About us</a>
@@ -26,8 +29,42 @@
     </section>
     <!-- HERO SECTION -->
     <section id="hero-section">
+        <div id="hero-section-overlay">
+
+        </div>
+        <!-- Swiper -->
+        <div id="swiper-container" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/african-children-1.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/african-children-2.avif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/african-children-3.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/african-children-4.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/african-children-5.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/african-children-1.jpeg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+        </div>
         <div id="donation-section">
-            <p>Hungry children like Aisha need your help</p>
+            <p id="donation-header">Your Penny Today Can Put A Smile On Their Face Tomorrow</p>
             <div id="donation-button-section-first">
                 <div id="donation-buttons-row-1">
                     <button>Give Once</button>
@@ -40,7 +77,7 @@
                     <button>$200</button>
                 </div>
                 <div id="donation-buttons-row-3">
-                    <input type="text" name="" id="">
+                    <input class="placeholders" type="text" name="" id="" placeholder="Enter Other Amounts">
                 </div>
             </div>
             <div id="know-better-container">
@@ -63,86 +100,302 @@
             <button id="continue-to-details">Continue to details</button>
         </div>
     </section>
-    <!-- ABOUT SECTION -->
-    <section id="about-us">
-        <div>
-            <div id="about-us-top">
-                <h3>Building a better world for and with children</h3>
-                <h4>We work hard to protect children from harm and help them access quality education<br>
-                    and health services.
-                </h4>
+
+    <section id="page-bottom-section">
+        <div id="page-bottom-section-with-margin">
+            <!-- ABOUT SECTION -->
+            <section id="about-us">
+                <div>
+                    <div id="about-us-top">
+                        <h3>Building a better world for and with children</h3>
+                    </div>
+                    <div id="about-us-bottom">
+                        <div id="health">
+                            <div id="health-img-div">
+                                <img src="./assets/logo/health.png" alt="">
+                            </div>
+                            <p class="about-text-header">Health</p>
+                            <p class="about-text-msg">
+                                We improve the health of children<br>
+                                and families so children no longer die<br>
+                                of preventable illnesses and live past<br>
+                            </p>
+                        </div>
+                        <div id="health">
+                            <div id="health-img-div">
+                                <img src="./assets/logo/education.png" alt="">
+                            </div>
+                            <p class="about-text-header">Education</p>
+                            <p class="about-text-msg">
+                                We create greater access to quality<br>
+                                education and ensure that girls and<br>
+                                boys are able to learn in safe and<br>
+                            </p>
+                        </div>
+                        <div id="health">
+                            <div id="health-img-div">
+                                <img src="./assets/logo/protect.png" alt="">
+                            </div>
+                            <p class="about-text-header">Protect</p>
+                            <p class="about-text-msg">
+                                We ensure children are safe at all<br>
+                                times and prevent their exposure to<br>
+                                abuse, neglect, exploitation and<br>
+                            </p>
+                        </div>
+                        <div id="health">
+                            <div id="health-img-div">
+                                <img src="./assets/logo/support.png" alt="">
+                            </div>
+                            <p class="about-text-header">Support</p>
+                            <p class="about-text-msg">
+                                When disaster strikes, we ensure that<br>
+                                children are given care and emotional<br>
+                                support to survive, recover and<br>
+                                continue to learn and live a normal <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECON HERO SECTION -->
+            <section id="second-hero-section">
+                <div id="second-hero-section-overlay"></div>
+                <video id="second-hero-video" autoplay muted loop src="./assets/videos/african-children-1.mp4"></video>
+                <div id="second-hero-section-text">
+                    <h3>
+                        Become a <br>
+                        <span id="monthly-giver">monthly giver</span><br>
+                        and save a<br>
+                        child’s life today
+                    </h3>
+                    <p>
+                        Your regular donation can help to make sure <br>
+                        the world’s most vulnerable children have <br>
+                        access to clean drinking water, won’t go <br>
+                        hungry or miss out on life-saving medicines.
+                    </p>
+                    <button id="tester" class="main-buttons">Donate Now</button>
+                </div>
+            </section>
+            <!-- UPCOMMING AND FEATURES SECTION -->
+            <section id="upcomming-and-featured">
+                <div id="upcomming-events">
+                    <div id="upcomming-events-heading">
+                        <h3>Upcomming Events</h3>
+                        <hr>
+                    </div>
+                    <div id="upcomming-events">
+                        <div id="fundraiser-for-kids">
+                            <img class="upcomming-events-img" src="./assets/images/african-children-10.jpg" alt="">
+                            <div>
+                                <h3>Fundraiser for Kids</h3>
+                                <p class="event-dates">Aug 25, 2018 | Ball Room New York</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit. Mauris tempus vestib ulum mauris.
+                                </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div id="fundraiser-for-kids">
+                            <img class="upcomming-events-img" src="./assets/images/african-children-12.jpg" alt="">
+                            <div>
+                                <h3>Bring education and health</h3>
+                                <p class="event-dates">Aug 25, 2018 | Ball Room New York</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit. Mauris tempus vestib ulum mauris.
+                                </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div id="fundraiser-for-kids">
+                            <img class="upcomming-events-img" src="./assets/images/african-children-9.jpg" alt="">
+                            <div>
+                                <h3>Bring Water to the children</h3>
+                                <p class="event-dates">Aug 25, 2018 | Ball Room New York</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit. Mauris tempus vestib ulum mauris.
+                                </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Featured-cause">
+                    <div id="feature-cause-heading">
+                        <h3>Feature Cause</h3>
+                        <hr>
+                    </div>
+                    <div id="featured-cause-box">
+                        <div id="featured-cause-box-top">
+                            <img src="./assets/images/african-children-13.jpg" alt="">
+                            <div class="event-feature-text">
+                                <div class="event-feature-text-header">
+                                    <h3>Fundraiser for kids</h3>
+                                    <p class="event-dates">Aug 15, 2018 | Ball Room New York</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipiscing elit.<br>
+                                    Mauris tempus vestib ulum<br>
+                                    mauris. Lorem ipsum dolor sit<br>
+                                    amet, consectetur.
+                                </p>
+                                <button class="main-buttons">Donate Now</button>
+                            </div>
+                        </div>
+                        <div id="featured-cause-box-bottom">
+                            <div class="funds-status">
+                                <div class="percentage-box percentage">83%</div>
+                            </div>
+                            <div class="funds-raised-and-goal">
+                                <p>Raised: $56 880</p>
+                                <p>Goal: $70 000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUR CAUSES -->
+            <section id="our-causes">
+                <p class="sub-header">Our Causes</p>
+                <div id="causes-container">
+                    <div id="first-box" class="causes-boxes">
+                        <div class="boxes-top">
+                            <img src="./assets/images/african-children-12.jpg" alt="">
+                        </div>
+                        <div class="boxes-bottom">
+                            <h3>Moving Children Off The Street</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br>
+                                adipisicing elit. Iste porro cum magni <br>
+                                laboriosam distinctio animi. Molestiae <br>
+                                culpa voluptates blanditiis voluptatem.
+                            </p>
+
+                            <div class="funds-status-for-causes">
+                                <div class="percentage-box-for-causes percentage-for-causes">40%</div>
+                            </div>
+                            <div class="funds-raised-and-goal-for-causes">
+                                <p>Raised: $56 880</p>
+                                <p>Goal: $70 000</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="second-box" class="causes-boxes">
+                        <div class="boxes-top">
+                            <img src="./assets/images/african-children-9.jpg" alt="">
+                        </div>
+                        <div class="boxes-bottom">
+                            <h3>Introducing Technologies To Children</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br>
+                                adipisicing elit. Iste porro cum magni <br>
+                                laboriosam distinctio animi. Molestiae <br>
+                                culpa voluptates blanditiis voluptatem.
+                            </p>
+
+                            <div class="funds-status-for-causes">
+                                <div class="percentage-box-for-causes percentage-for-causes">40%</div>
+                            </div>
+                            <div class="funds-raised-and-goal-for-causes">
+                                <p>Raised: $56 880</p>
+                                <p>Goal: $70 000</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="third-box" class="causes-boxes">
+                        <div class="boxes-top">
+                            <img src="./assets/images/african-children-eating.jpeg" alt="">
+                        </div>
+                        <div class="boxes-bottom">
+                            <h3>Feeding Street Children</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br>
+                                adipisicing elit. Iste porro cum magni <br>
+                                laboriosam distinctio animi. Molestiae <br>
+                                culpa voluptates blanditiis voluptatem.
+                            </p>
+
+                            <div class="funds-status-for-causes">
+                                <div class="percentage-box-for-causes percentage-for-causes">40%</div>
+                            </div>
+                            <div class="funds-raised-and-goal-for-causes">
+                                <p>Raised: $56 880</p>
+                                <p>Goal: $70 000</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- BECOME A VOLUNTEER -->
+            <section id="volunteer">
+                <h3 id="volunteer-header">Become A Volumteer</h3>
+                <p id="volunteer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button id="join-us-btn">Join Us Now</button>
+            </section>
+            <!-- <section id="achievement">
+
+            </section> -->
+        </div>
+    </section>
+    <section id="footer">
+        <div id="footer-top">
+            <div id="first-part" class="footer-parts">
+                <img id="logo-at-footer" src="./assets/logo/logo-no-background.png" alt="">
+                <p class="first-part-text">
+                    Lorem ipsum dolor sit amet, con <br>
+                    sectetur adipiscing elit. Mauris temp us <br>
+                    vestib ulum mauris.Lorem ipsum dolor sit <br>
+                    amet, consectetur adipiscing elit. Mauris <br>
+                    tempus vestib ulum mauris.Lorem ipsum.
+                </p>
+                <div id="socials">
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
             </div>
-            <div id="about-us-bottom">
-                <div id="health">
-                    <div id="health-img-div">
-                        <img src="./assets/logo/health.png" alt="">
-                    </div>
-                    <p>Health</p>
-                        <p>
-                            We improve the health of children<br>
-                            and families so children no longer die<br>
-                            of preventable illnesses and live past<br>
-                            their fifth birthday.
-                        </p>
+            <div id="second-part" class="footer-parts">
+                <div>
+                    <p class="footer-headers">Useful Links</p>
                 </div>
-                <div id="health">
-                    <div id="health-img-div">
-                        <img src="./assets/logo/education.png" alt="">
-                    </div>
-                    <p>Education</p>
-                    <p>
-                        We create greater access to quality<br>
-                        education and ensure that girls and<br>
-                        boys are able to learn in safe and<br>
-                        positive environments.
-                    </p>
+                <div>
+                    <p class="first-part-text">Privacy Polticy</p>
+                    <p class="first-part-text">Become a Volunteer</p>
+                    <p class="first-part-text">Donate</p>
+                    <p class="first-part-text">Testimonials</p>
+                    <p class="first-part-text">Causes</p>
                 </div>
-                <div id="health">
-                    <div id="health-img-div">
-                        <img src="./assets/logo/protect.png" alt="">
-                    </div>
-                    <p>Protect</p>
-                    <p>
-                        We ensure children are safe at all<br>
-                        times and prevent their exposure to<br>
-                        abuse, neglect, exploitation and<br>
-                        violence.
-                    </p>
+            </div>
+            <div id="third-part" class="footer-parts">
+                <div>
+                    <p class="footer-headers">Contact</p>
                 </div>
-                <div id="health">
-                    <div id="health-img-div">
-                        <img src="./assets/logo/support.png" alt="">
-                    </div>
-                    <p>Support</p>
-                    <p>
-                        When disaster strikes, we ensure that<br>
-                        children are given care and emotional<br>
-                        support to survive, recover and<br>
-                        continue to learn and live a normal <br>
-                        life.
-                    </p>
+                <div id="contact">
+                    <div><i class="fa-solid fa-phone"></i><span class="first-part-text">+233240844501</span></div>
+                    <div><i class="fa-solid fa-envelope"></i><span
+                            class="first-part-text">dev.dennisappah@gmail.com</span></div>
+                    <div><i class="fa-solid fa-location-dot"></i><span class="first-part-text">Accra, Ghana</span></div>
+                </div>
+                <div>
+                    <input class="placeholders" id="input-email" type="email" name="" placeholder="Enter Email" id="">
                 </div>
             </div>
         </div>
     </section>
-    <!-- SECON HERO SECTION -->
-    <section id="second-hero-section">
-        <div id="second-hero-section-text">
-            <h3>
-                Become a <br>
-                <span id="monthly-giver">monthly giver</span><br>
-                 and save a<br>
-                  child’s life today
-            </h3>
-            <p>
-                Your regular donation can help to make sure <br>
-                 the world’s most vulnerable children have <br>
-                  access to clean drinking water, won’t go <br>
-                   hungry or miss out on life-saving medicines.
-            </p>
-            <button id="tester" class="main-buttons">Donate Now</button>
-        </div>
-    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
