@@ -345,7 +345,7 @@ nav {
 #second-hero-video {
     width: inherit;
     height: inherit;
-
+    object-fit: fill;
 }
 
 /*  -------------------------------    END OF SECOND HERO SECTION      --------------------------- */
